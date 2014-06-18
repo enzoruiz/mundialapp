@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block cuerpo %}
+	<div class="container">
+		<div class="jumbotron">
+			<h1>{{ prueba.BRASILPJ }}</h1>
+		</div>
+		<ul>
+			{% for encuentro in encuentros %}
+				<li>{{ encuentro }}</li>
+			{% endfor %}
+		</ul>
+	</div>
+{% endblock cuerpo %}

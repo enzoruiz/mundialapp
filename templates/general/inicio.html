@@ -1,0 +1,236 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block titulo %}
+	GRUPOS MUNDIAL BRASIL 2014
+{% endblock titulo %}
+
+{% block cuerpo %}
+	<div class="container">
+		<div class="jumbotron">
+			<h2 align="center">MUNDIAL BRASIL 2014</h2>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<table class="table table-bordered table-condensed">
+					<tr>
+						<td colspan="6"><h4>GRUPO A</h4></td>
+					</tr>
+					<tr>
+						<td style="width:180px">PAIS</td>
+						<td align="center" style="width:60px;">PJ</td>
+						<td align="center" style="width:60px;">GF</td>
+						<td align="center" style="width:60px;">GC</td>
+						<td align="center" style="width:60px;">DF</td>
+						<td align="center" style="width:60px;">PT</td>
+					</tr>
+				{% for a in grupoa %}
+					<tr>
+						{% if forloop.counter < 3 %}
+							<td class="success"><img src="{% static "img/" %}{{ a.pais }}.png" width="24" height="24"> {{ a.pais }}</td>
+						{% else %}
+							<td><img src="{% static "img/" %}{{ a.pais }}.png" width="24" height="24"> {{ a.pais }}</td>
+						{% endif %}
+						<td align="center">{{ a.pj }}</td>
+						<td align="center">{{ a.gf }}</td>
+						<td align="center">{{ a.gc }}</td>
+						<td align="center">{{ a.df }}</td>
+						<td align="center">{{ a.pt }}</td>
+					</tr>
+				{% endfor %}
+				</table>
+				<table class="table table-bordered table-condensed">
+					<tr>
+						<td colspan="6"><h4>GRUPO C</h4></td>
+					</tr>
+					<tr>
+						<td style="width:180px">PAIS</td>
+						<td align="center" style="width:60px;">PJ</td>
+						<td align="center" style="width:60px;">GF</td>
+						<td align="center" style="width:60px;">GC</td>
+						<td align="center" style="width:60px;">DF</td>
+						<td align="center" style="width:60px;">PT</td>
+					</tr>
+				{% for c in grupoc %}
+					<tr>
+						{% if forloop.counter < 3 %}
+							<td class="success"><img src="{% static "img/" %}{{ c.pais }}.png" width="24" height="24"> {{ c.pais }}</td>
+						{% else %}
+							<td><img src="{% static "img/" %}{{ c.pais }}.png" width="24" height="24"> {{ c.pais }}</td>
+						{% endif %}
+						<td align="center">{{ c.pj }}</td>
+						<td align="center">{{ c.gf }}</td>
+						<td align="center">{{ c.gc }}</td>
+						<td align="center">{{ c.df }}</td>
+						<td align="center">{{ c.pt }}</td>
+					</tr>
+				{% endfor %}
+				</table>
+				<table class="table table-bordered table-condensed">
+					<tr>
+						<td colspan="6"><h4>GRUPO E</h4></td>
+					</tr>
+					<tr>
+						<td style="width:180px">PAIS</td>
+						<td align="center" style="width:60px;">PJ</td>
+						<td align="center" style="width:60px;">GF</td>
+						<td align="center" style="width:60px;">GC</td>
+						<td align="center" style="width:60px;">DF</td>
+						<td align="center" style="width:60px;">PT</td>
+					</tr>
+				{% for e in grupoe %}
+					<tr>
+						{% if forloop.counter < 3 %}
+							<td class="success"><img src="{% static "img/" %}{{ e.pais }}.png" width="24" height="24"> {{ e.pais }}</td>
+						{% else %}
+							<td><img src="{% static "img/" %}{{ e.pais }}.png" width="24" height="24"> {{ e.pais }}</td>
+						{% endif %}
+						<td align="center">{{ e.pj }}</td>
+						<td align="center">{{ e.gf }}</td>
+						<td align="center">{{ e.gc }}</td>
+						<td align="center">{{ e.df }}</td>
+						<td align="center">{{ e.pt }}</td>
+					</tr>
+				{% endfor %}
+				</table>
+				<table class="table table-bordered table-condensed">
+					<tr>
+						<td colspan="6"><h4>GRUPO G</h4></td>
+					</tr>
+					<tr>
+						<td style="width:180px">PAIS</td>
+						<td align="center" style="width:60px;">PJ</td>
+						<td align="center" style="width:60px;">GF</td>
+						<td align="center" style="width:60px;">GC</td>
+						<td align="center" style="width:60px;">DF</td>
+						<td align="center" style="width:60px;">PT</td>
+					</tr>
+				{% for g in grupog %}
+					<tr>
+						{% if forloop.counter < 3 %}
+							<td class="success"><img src="{% static "img/" %}{{ g.pais }}.png" width="24" height="24"> {{ g.pais }}</td>
+						{% else %}
+							<td><img src="{% static "img/" %}{{ g.pais }}.png" width="24" height="24"> {{ g.pais }}</td>
+						{% endif %}
+						<td align="center">{{ g.pj }}</td>
+						<td align="center">{{ g.gf }}</td>
+						<td align="center">{{ g.gc }}</td>
+						<td align="center">{{ g.df }}</td>
+						<td align="center">{{ g.pt }}</td>
+					</tr>
+				{% endfor %}
+				</table>
+			</div>
+			<div class="col-md-6">
+				<table class="table table-bordered table-condensed">
+					<tr>
+						<td colspan="6"><h4>GRUPO B</h4></td>
+					</tr>
+					<tr>
+						<td style="width:180px">PAIS</td>
+						<td align="center" style="width:60px;">PJ</td>
+						<td align="center" style="width:60px;">GF</td>
+						<td align="center" style="width:60px;">GC</td>
+						<td align="center" style="width:60px;">DF</td>
+						<td align="center" style="width:60px;">PT</td>
+					</tr>
+				{% for b in grupob %}
+					<tr>
+						{% if forloop.counter < 3 %}
+							<td class="success"><img src="{% static "img/" %}{{ b.pais }}.png" width="24" height="24"> {{ b.pais }}</td>
+						{% else %}
+							<td><img src="{% static "img/" %}{{ b.pais }}.png" width="24" height="24"> {{ b.pais }}</td>
+						{% endif %}
+						<td align="center">{{ b.pj }}</td>
+						<td align="center">{{ b.gf }}</td>
+						<td align="center">{{ b.gc }}</td>
+						<td align="center">{{ b.df }}</td>
+						<td align="center">{{ b.pt }}</td>
+					</tr>
+				{% endfor %}
+				</table>
+				<table class="table table-bordered table-condensed">
+					<tr>
+						<td colspan="6"><h4>GRUPO D</h4></td>
+					</tr>
+					<tr>
+						<td style="width:180px">PAIS</td>
+						<td align="center" style="width:60px;">PJ</td>
+						<td align="center" style="width:60px;">GF</td>
+						<td align="center" style="width:60px;">GC</td>
+						<td align="center" style="width:60px;">DF</td>
+						<td align="center" style="width:60px;">PT</td>
+					</tr>
+				{% for d in grupod %}
+					<tr>
+						{% if forloop.counter < 3 %}
+							<td class="success"><img src="{% static "img/" %}{{ d.pais }}.png" width="24" height="24"> {{ d.pais }}</td>
+						{% else %}
+							<td><img src="{% static "img/" %}{{ d.pais }}.png" width="24" height="24"> {{ d.pais }}</td>
+						{% endif %}
+						<td align="center">{{ d.pj }}</td>
+						<td align="center">{{ d.gf }}</td>
+						<td align="center">{{ d.gc }}</td>
+						<td align="center">{{ d.df }}</td>
+						<td align="center">{{ d.pt }}</td>
+					</tr>
+				{% endfor %}
+				</table>
+				<table class="table table-bordered table-condensed">
+					<tr>
+						<td colspan="6"><h4>GRUPO F</h4></td>
+					</tr>
+					<tr>
+						<td style="width:180px">PAIS</td>
+						<td align="center" style="width:60px;">PJ</td>
+						<td align="center" style="width:60px;">GF</td>
+						<td align="center" style="width:60px;">GC</td>
+						<td align="center" style="width:60px;">DF</td>
+						<td align="center" style="width:60px;">PT</td>
+					</tr>
+				{% for f in grupof %}
+					<tr>
+						{% if forloop.counter < 3 %}
+							<td class="success"><img src="{% static "img/" %}{{ f.pais }}.png" width="24" height="24"> {{ f.pais }}</td>
+						{% else %}
+							<td><img src="{% static "img/" %}{{ f.pais }}.png" width="24" height="24"> {{ f.pais }}</td>
+						{% endif %}
+						<td align="center">{{ f.pj }}</td>
+						<td align="center">{{ f.gf }}</td>
+						<td align="center">{{ f.gc }}</td>
+						<td align="center">{{ f.df }}</td>
+						<td align="center">{{ f.pt }}</td>					
+					</tr>
+				{% endfor %}
+				</table>
+				<table class="table table-bordered table-condensed">
+					<tr>
+						<td colspan="6"><h4>GRUPO H</h4></td>
+					</tr>
+					<tr>
+						<td style="width:180px">PAIS</td>
+						<td align="center" style="width:60px;">PJ</td>
+						<td align="center" style="width:60px;">GF</td>
+						<td align="center" style="width:60px;">GC</td>
+						<td align="center" style="width:60px;">DF</td>
+						<td align="center" style="width:60px;">PT</td>
+					</tr>
+				{% for h in grupoh %}
+					<tr>
+						{% if forloop.counter < 3 %}
+							<td class="success"><img src="{% static "img/" %}{{ h.pais }}.png" width="24" height="24"> {{ h.pais }}</td>
+						{% else %}
+							<td><img src="{% static "img/" %}{{ h.pais }}.png" width="24" height="24"> {{ h.pais }}</td>
+						{% endif %}
+						<td align="center">{{ h.pj }}</td>
+						<td align="center">{{ h.gf }}</td>
+						<td align="center">{{ h.gc }}</td>
+						<td align="center">{{ h.df }}</td>
+						<td align="center">{{ h.pt }}</td>
+					</tr>
+				{% endfor %}
+				</table>
+			</div>
+		</div>
+	</div>
+{% endblock cuerpo %}
